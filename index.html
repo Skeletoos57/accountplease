@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Account, Please!</title>
+    </head>
+    <body>
+
+        <form name=form>
+            <h1 id="title">Account, Please!</h1>
+            <h6 id="ad">A simple tip calculator and account divider.</h6>
+            <div id="money">
+                <br>
+                <p>Dinero a pagar:    <input type="number" placeholder="Dinero" name="cashToPay"></p>
+            </div>
+
+            <div id="tip">
+                <p>Propina:    <input id="tip" type="text" placeholder="Porcentaje (sin simbolo %)" name="tipValue" value="15" min=0 max=100></p>
+                <p id="note">Recomendaciones: Si el servicio fue malo, 10%. Si el servicio fue bueno, 15%. Si fue muy bueno, 20%. Si fue excelente, 25%.</p>
+                <p>----------------------------------------------------------------------------------------</p>
+            </div>
+            <div id="split">
+                <p>Dividir entre personas: <input type="number" name="splitValue" value="1"></p>
+                <p id="note">Nota: Si es solo usted, dejelo en 1 (predeterminadamente es asi).</p>
+            </div>
+            <div>
+                <input onclick="calculate()" type="button" value="Calcular" id="calculatebtn">
+            </div>
+            <div class="info">
+                <p>Desarrollado por Thiago Grillo</p>
+            </div>
+        </form>
+        <div id="response"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
